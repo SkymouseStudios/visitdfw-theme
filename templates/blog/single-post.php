@@ -776,7 +776,9 @@ AND b.meta_key= 'longitude'
 <?php if ( us_get_option( 'post_related', TRUE ) ): ?>
 	<?php us_load_template( 'templates/blog/single-post-related' ) ?>
 <?php endif; ?>
-<?php
+
+<!-- facebook comments used to be here -->
+		<?php
     $facebook_box_show = json_decode(stripslashes(get_option( 'wpdevart_comments_box_show_in' )), true);
     $meta_facebook = get_post_meta(get_the_ID());
     $facebook_status = $meta_facebook['_disabel_wpdevart_facebook_comment'][0];
@@ -787,7 +789,7 @@ AND b.meta_key= 'longitude'
 		<div class="l-section-h i-cf">
 			<div class="footer_fb_comment">
 				<?php
-				echo do_shortcode('[wpdevart_facebook_comment curent_url="'.get_permalink().'" order_type="social" title_text="Leave A Comment" title_text_color="#000000" title_text_font_size="22" title_text_font_famely="monospace" title_text_position="left" width="100%" bg_color="#d4d4d4" animation_effect="random" count_of_comments="3" ]');
+				// echo do_shortcode('[wpdevart_facebook_comment curent_url="'.get_permalink().'" order_type="social" title_text="Leave A Comment" title_text_color="#000000" title_text_font_size="22" title_text_font_famely="monospace" title_text_position="left" width="100%" bg_color="#d4d4d4" animation_effect="random" count_of_comments="3" ]');
 				?>
 			</div>
 		</div>
