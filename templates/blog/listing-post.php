@@ -194,7 +194,7 @@ if ( get_post_type() == 'us_portfolio' AND usof_meta( 'us_tile_action' ) == 'lin
 }
 
 $thumb = get_post_meta(get_the_ID(), 'thumbnail-image', true);
-$thumb_size = is_home() ? 'listing-thumb-large' : 'listing-thumb';
+$thumb_size = is_home() ? 'listing-thumb-large' : 'home_latest_stories';
 if (empty($thumb)) {
 	$thumb = get_the_post_thumbnail_url(get_the_ID(), $thumb_size);
 } else {

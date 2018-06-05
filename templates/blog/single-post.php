@@ -638,118 +638,118 @@ AND b.meta_key= 'longitude'
 		}
 	}
 ?>
-<?php
+	<?php
 	$show_what_people_are_sharing_section = get_post_meta(get_the_ID(),'show_what_people_are_sharing',true);
 	if(get_option('show_what_people_are_sharing') == 1){
 		if(isset($show_what_people_are_sharing_section) && $show_what_people_are_sharing_section == 1){
-?>
-<div class="l-section near_wrap social_section">
-    <div class="l-section-h i-cf">
-		<div class="nearby_event_section">
-			<?php
-				$instagram_user_id = get_post_meta(get_the_ID(),'instagram_user_id',true);
-				$instagram_hashtag = get_post_meta(get_the_ID(),'instagram_social_hashtags',true);
+	?>
+		<div class="l-section near_wrap social_section">
+		    <div class="l-section-h i-cf">
+				<div class="nearby_event_section">
+					<?php
+						$instagram_user_id = get_post_meta(get_the_ID(),'instagram_user_id',true);
+						$instagram_hashtag = get_post_meta(get_the_ID(),'instagram_social_hashtags',true);
 
-				$twitter_user_timeline = get_post_meta(get_the_ID(),'twitter_user_timeline',true);
-				$twitter_hashtag = get_post_meta(get_the_ID(),'twitter_social_hasgtags',true);
+						$twitter_user_timeline = get_post_meta(get_the_ID(),'twitter_user_timeline',true);
+						$twitter_hashtag = get_post_meta(get_the_ID(),'twitter_social_hasgtags',true);
 
-				$facebook_page_id = get_post_meta(get_the_ID(),'facebook_page_id',true);
-				$facebook_hashtag = get_post_meta(get_the_ID(),'facebook_soical_hashtags',true);
-			?>
-			<div class="main_title nearby_event">What People Are <span>Sharing</span></div>
-			<div class="nearby_posts_section">
-				<section class="l-section wpb_row height_medium social_feeds">
-					<div class="l-section-h i-cf">
-						<div class="g-cols offset_small">
-							<?php
-								if((isset($instagram_hashtag) && $instagram_hashtag != "") || (isset($instagram_user_id) && $instagram_user_id != ""))
-								{
-							?>
-							<div class="vc_col-sm-4 wpb_column vc_column_container">
-								<div class="vc_column-inner">
-									<div class="wpb_text_column ">
-										<div class="wpb_wrapper">
-											<?php
-												if($instagram_user_id != ""){
-													$insta_id = 'id="'.$instagram_user_id.'"';
-												}else{
-													$insta_id = '';
-												}
-												if($instagram_user_id != "" && $instagram_hashtag != ""){
-													$insta_hashtag = 'includewords="'.$instagram_hashtag.'"';
-												}else if($instagram_hashtag != ""){
-													$insta_hashtag = 'type=hashtag hashtag="'.$instagram_hashtag.'"';
-												}else{
-													$insta_hashtag = '';
-												}
-												echo do_shortcode('[instagram-feed '.$insta_id.' '.$insta_hashtag.' width=100% num=1 cols=1 showcaption=false showbio=false]');
-											?>
+						$facebook_page_id = get_post_meta(get_the_ID(),'facebook_page_id',true);
+						$facebook_hashtag = get_post_meta(get_the_ID(),'facebook_soical_hashtags',true);
+					?>
+					<!-- <div class="main_title nearby_event">What People Are <span>Sharing</span></div> -->
+					<div class="nearby_posts_section">
+						<section class="l-section wpb_row height_medium social_feeds">
+							<div class="l-section-h i-cf">
+								<div class="g-cols offset_small">
+									<?php
+										if((isset($instagram_hashtag) && $instagram_hashtag != "") || (isset($instagram_user_id) && $instagram_user_id != ""))
+										{
+									?>
+									<div class="vc_col-sm-4 wpb_column vc_column_container">
+										<div class="vc_column-inner">
+											<div class="wpb_text_column ">
+												<div class="wpb_wrapper">
+													<?php
+														if($instagram_user_id != ""){
+															$insta_id = 'id="'.$instagram_user_id.'"';
+														}else{
+															$insta_id = '';
+														}
+														if($instagram_user_id != "" && $instagram_hashtag != ""){
+															$insta_hashtag = 'includewords="'.$instagram_hashtag.'"';
+														}else if($instagram_hashtag != ""){
+															$insta_hashtag = 'type=hashtag hashtag="'.$instagram_hashtag.'"';
+														}else{
+															$insta_hashtag = '';
+														}
+														echo do_shortcode('[instagram-feed '.$insta_id.' '.$insta_hashtag.' width=100% num=1 cols=1 showcaption=false showbio=false]');
+													?>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<?php
-								}
-								if((isset($twitter_hashtag) && $twitter_hashtag != "") || (isset($twitter_user_timeline) && $twitter_user_timeline != ""))
-								{
-							?>
-							<div class="vc_col-sm-4 wpb_column vc_column_container">
-								<div class="vc_column-inner">
-									<div class="wpb_text_column ">
-										<div class="wpb_wrapper">
-											<?php
-												if($twitter_user_timeline != ""){
-													$twitter_screen = 'screenname="'.$twitter_user_timeline.'"';
-												}else{
-													$twitter_screen = '';
-												}
-												if($twitter_user_timeline != "" && $twitter_hashtag != ""){
-													$twit_hashtag = 'includewords="'.$twitter_hashtag.'"';
-												}elseif($twitter_hashtag != ""){
-													$twit_hashtag = 'hashtag="'.$twitter_hashtag.'"';
-												}else{
-													$twit_hashtag = '';
-												}
-												echo do_shortcode('[custom-twitter-feeds '.$twitter_screen.' '.$twit_hashtag.' num=1 showfollow=false]');
-											?>
+									<?php
+										}
+										if((isset($twitter_hashtag) && $twitter_hashtag != "") || (isset($twitter_user_timeline) && $twitter_user_timeline != ""))
+										{
+									?>
+									<div class="vc_col-sm-4 wpb_column vc_column_container">
+										<div class="vc_column-inner">
+											<div class="wpb_text_column ">
+												<div class="wpb_wrapper">
+													<?php
+														if($twitter_user_timeline != ""){
+															$twitter_screen = 'screenname="'.$twitter_user_timeline.'"';
+														}else{
+															$twitter_screen = '';
+														}
+														if($twitter_user_timeline != "" && $twitter_hashtag != ""){
+															$twit_hashtag = 'includewords="'.$twitter_hashtag.'"';
+														}elseif($twitter_hashtag != ""){
+															$twit_hashtag = 'hashtag="'.$twitter_hashtag.'"';
+														}else{
+															$twit_hashtag = '';
+														}
+														echo do_shortcode('[custom-twitter-feeds '.$twitter_screen.' '.$twit_hashtag.' num=1 showfollow=false]');
+													?>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<?php
-								}
-								if((isset($facebook_hashtag) && $facebook_hashtag != "") || (isset($facebook_page_id) && $facebook_page_id != ""))
-								{
-							?>
-							<div class="vc_col-sm-4 wpb_column vc_column_container facebook_feed">
-								<div class="vc_column-inner">
-									<div class="wpb_text_column ">
-										<div class="wpb_wrapper">
-											<?php
-												if($facebook_page_id != ""){
-													$face_id = 'id="'.$facebook_page_id.'"';
-												}else{
-													$face_id = '';
-												}
-												if($facebook_hashtag != ""){
-													$face_hashtag = 'filter="'.$facebook_hashtag.'"';
-												}else{
-													$face_id = "";
-												}
-												echo do_shortcode('[custom-facebook-feed '.$face_id.' '.$face_hashtag.' pagetype=group num=1 layout=thumb]');
-											?>
+									<?php
+										}
+										if((isset($facebook_hashtag) && $facebook_hashtag != "") || (isset($facebook_page_id) && $facebook_page_id != ""))
+										{
+									?>
+									<div class="vc_col-sm-4 wpb_column vc_column_container facebook_feed">
+										<div class="vc_column-inner">
+											<div class="wpb_text_column ">
+												<div class="wpb_wrapper">
+													<?php
+														if($facebook_page_id != ""){
+															$face_id = 'id="'.$facebook_page_id.'"';
+														}else{
+															$face_id = '';
+														}
+														if($facebook_hashtag != ""){
+															$face_hashtag = 'filter="'.$facebook_hashtag.'"';
+														}else{
+															$face_id = "";
+														}
+														echo do_shortcode('[custom-facebook-feed '.$face_id.' '.$face_hashtag.' pagetype=group num=1 layout=thumb]');
+													?>
+												</div>
+											</div>
 										</div>
 									</div>
+									<?php } ?>
 								</div>
 							</div>
-							<?php } ?>
-						</div>
+						</section>
 					</div>
-				</section>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
 <?php
 		}
 	}
