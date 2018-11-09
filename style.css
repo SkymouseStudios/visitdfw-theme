@@ -1,14 +1,11 @@
 /*
 Theme Name: Visit DFW - Impreza Child
 Template: Impreza
-Version: 2.1
+Version: 2.3
 Author:	Skymouse Studios
 Theme URI: http://impreza.us-themes.com/
 Author URI: http://us-themes.com/
 */
-
-
-/*Add your own styles here:*/
 
 @media (min-width: 768px) {
     .our_city_map .owl-carousel .owl-wrapper {
@@ -32,12 +29,6 @@ body a:hover {
 .single-post p a:hover {
     color: #057593 !important;
 }
-
-
-/*.single-post .fix-image{position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);max-width: inherit;}*/
-
-
-/*.fix-image{position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);max-width: inherit;}*/
 
 .title-row>.l-section-h {
     max-width: 1120px;
@@ -2334,15 +2325,9 @@ a.sbi_header_link:hover, a.sbi_header_link:hover .sbi_no_bio, a.ctf-header-link:
     color: #ff0000;
 }
 
-
-/*.single-post .w-blog-post-preview {border-bottom: 10px solid #00c4b4;margin: 0 0 20px;padding-top:105px;height:45vh;overflow:hidden;position:relative;}*/
-
 .single-post .l-section-h {
     padding: 0;
 }
-
-
-/*#wpdevar_comment_1{display:none;}*/
 
 .fb-comments {
     display: none !important;
@@ -2563,9 +2548,6 @@ footer.l-footer {
     padding: 5px 10px;
 }
 
-
-/*.l-subheader.at_bottom .l-subheader-cell.at_right{background: rgba(0, 0, 0, 0.5);float: right;padding: 5px 10px;}*/
-
 .l-subheader.at_bottom .l-subheader-cell.at_right>* {
     margin-left: 10px;
 }
@@ -2593,7 +2575,6 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
         padding: 0 20px 0 20px !important;
         text-transform: capitalize;
     }
-    /*.home.header_hor .ush_menu_1.type_desktop .w-nav-list.level_1 > .menu-item > a{padding: 0 18px !important;}*/
     .banner_bottom_section .w-iconbox .w-iconbox-title {
         font-size: 16px;
     }
@@ -2604,10 +2585,6 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
         height: auto !important;
         width: 100% !important;
     }
-}
-
-@media (max-width: 1050px) {
-    /*header .emma-horizontal-layout ul#emma-form-elements .emma-form-input{width:220px;}*/
 }
 
 @media (min-width: 768px) and (max-width: 957px) {
@@ -2720,10 +2697,11 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
         margin-top: 65px !important;
         position: relative;
     }
-    /*.single-post .single_custom_title.modern {
-  margin-top: 65px !important;
-}*/
 }
+
+/******************************************************************
+767px Desktop Stylsheet
+******************************************************************/
 
 @media (max-width: 767px) {
     #title .icon-col {
@@ -2919,15 +2897,11 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
         margin: 10px !important;
         width: 100%;
     }
-    /*.single-post .single_custom_title.modern .w-blog-post-title .map_icon{
-	position:relative !important;
-}*/
+    
     .post_image .map_icon {
         position: relative !important;
     }
-    .single-post .l-canvas.sidebar_none .l-section {
-        padding: 0 40px !important;
-    }
+    
     .single-post .w-blog-post-title.modern {
         padding: 30px 40px !important;
     }
@@ -3004,9 +2978,6 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
     .category .l-titlebar.size_medium .l-titlebar-h, .page .l-titlebar.size_medium .l-titlebar-h, .author .l-titlebar.size_medium .l-titlebar-h, .search.search-results .l-titlebar.size_medium .l-titlebar-h {
         padding: 0 0 1px !important;
     }
-    /*.single-post .l-titlebar.size_medium.single_custom_title.modern .l-titlebar-h {
-  padding: 1px 0 !important;
-}*/
     .category .l-titlebar.size_medium .l-titlebar-h h1 {
         font-size: 18px;
         font-weight: 600;
@@ -3028,58 +2999,9 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
     background-image: url("img/map_ccc.png") !important;
 }
 
-
-/*.single-post .preview_trendy .w-blog-post-meta a.fn,.single-post .preview_modern .w-blog-post-meta a.fn {
-    color: #ffffff;
-}
-.single-post .preview_trendy .w-blog-post-meta a:hover.fn,.single-post .preview_modern .w-blog-post-meta a:hover.fn{
-	color: #ccc;
-}
-.single-post .preview_trendy .w-blog .w-blog-post-meta > time,.single-post .preview_modern .w-blog .w-blog-post-meta > time {
-  border-left: 1px solid #ffffff;
-  color: #ffffff;
-}
-.single-post .preview_trendy .w-blog-post-meta .w-blog-post-meta-comments,.single-post .preview_modern .w-blog-post-meta .w-blog-post-meta-comments {
-  border-left: 1px solid #ffffff;
-  color: #ffffff;
-}
-.single-post .preview_trendy  .w-blog-post-meta .right_social .w-sharing,.single-post .preview_modern  .w-blog-post-meta .right_social .w-sharing {
-  color: #ffffff;
-}
-.single-post .preview_trendy .w-blog-post-meta .right_social .share_text,.single-post .preview_modern .w-blog-post-meta .right_social .share_text {
-  color: #ffffff;
-}
-.single-post .preview_trendy  .w-blog-post-meta .right_social .w-sharing  .w-sharing-icon,.single-post .preview_modern  .w-blog-post-meta .right_social .w-sharing  .w-sharing-icon{
-	color: #ffffff;
-}*/
-
-
-/*.single-post .preview_trendy .l-canvas.sidebar_none .l-section,.single-post .preview_modern .l-canvas.sidebar_none .l-section {
-  padding: 50px 40px 0;
-}*/
-
-
-/*.single-post .preview_trendy .w-blog-post-meta a,.single-post .preview_modern .w-blog-post-meta a{color:#fff;}*/
-
-
-/*.single-post .l-section.preview_trendy .w-blog::after{
-  background-color: rgba(0, 0, 0, 0);
-}
-.single-post .preview_trendy .w-sharing.type_simple .w-sharing-icon,.single-post .preview_modern .w-sharing.type_simple .w-sharing-icon{
-	opacity:1;
-}*/
-
 .single-post .l-section.preview_modern .w-blog::after {
     background: rgba(0, 0, 0, 0);
 }
-
-
-/*.single-post .single_custom_title.modern{
-	margin-top:105px;
-}
-.single-post article.preview_modern{
-	margin-top:40px;
-}*/
 
 .category.header_hor .l-header.pos_fixed~.l-titlebar, .search.search-results.header_hor .l-header.pos_fixed~.l-titlebar {
     padding-top: 65px;
@@ -3094,63 +3016,9 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
     padding: 10px 0 10px 15px;
 }
 
-
-/*.single-post .l-titlebar.size_medium.single_custom_title.modern  .l-titlebar-h{padding:0;}
-.single-post .l-titlebar.size_medium.single_custom_title.modern .l-titlebar-h h1 {
-  line-height: 45px;
-  margin: 10px 0;
-  padding: 10px 0 0 15px;
-  width:100%;
-}
-.single-post .l-titlebar.size_medium.single_custom_title.modern .l-titlebar-content{
-	width :100%;
-}
-.single-post .single_custom_title.modern .map_icon .city_name{
-	margin-bottom:10px;
-}
-.single_custom_title.modern.sports-entertainment{
-	background:#00c4b4 none repeat scroll 0 0;
-}
-.single_custom_title.modern.art-culture{
-	background:#ff5a34 none repeat scroll 0 0;
-}
-.single_custom_title.modern.dining{
-	background:#8a2690 none repeat scroll 0 0;
-}
-.single_custom_title.modern.shopping{
-	background:#76bd1d none repeat scroll 0 0;
-}
-.single_custom_title.modern.texas-heritage{
-	background:#f6b221 none repeat scroll 0 0;
-}*/
-
-
-/*.sidebar_none .l-section.preview_modern .w-blog {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 36%;
-}*/
-
-
-/*.sidebar_none .l-section.preview_modern .l-section-h, .sidebar_none .l-section.preview_modern .w-blog {
-  position: relative;
-}*/
-
-
-/*article.preview_basic.custom_modern{
-	padding-top: 40px !important;
-}*/
-
 .single-post .sidebar_none .l-section.preview_modern .l-section-h, .single-post .sidebar_none .l-section.preview_modern .w-blog {
     position: relative;
 }
-
-
-/*article.preview_modern {
-  padding-top: 0 !important;
-   padding-left: 0 !important;
-    padding-right: 0 !important;
-}*/
 
 .sidebar_none .l-section.preview_modern .w-blog {
     padding: 0;
@@ -3189,22 +3057,6 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
     box-sizing: content-box;
 }
 
-.single-post .post_image .size-large {
-    /*height: 600px; */
-}
-
-
-/*.single-post .post_image h1 {
-  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-  bottom: 0;
-  padding: 20px;
-  position: absolute;
-  width: 100%;
-  margin-bottom: 0;
-  color: #ffffff;
-}
-*/
-
 .contact-form .input-group .wpcf7-form-control.wpcf7-submit {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
@@ -3226,17 +3078,6 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
 .single-post.header_hor .titlebar_none.sidebar_none .l-header.pos_fixed~.l-main .l-section:first-child {
     padding-top: 100px;
 }
-
-.single-post .l-canvas.sidebar_none .l-section {
-    /*padding: 0 100px;*/
-    padding: 15px 100px 0;
-}
-
-
-/*.single-post .w-blog-post-title.modern{
- padding: 25px 100px;
- margin-bottom: 10px;
-}*/
 
 .single-post .img-bot {
     position: absolute;
@@ -4168,4 +4009,66 @@ a.more:hover {
 
 .w-blog .featured_section .archive-description h3 {
 	padding-top: 0;
+}
+
+
+/******************************************************************
+CUSTOM Fixes From Skymouse Studios
+******************************************************************/
+
+
+main ul {
+    list-style-type: disc !important;
+}
+
+.page-template .l-section:first-child {
+    padding-top: 1px !important;
+}
+
+.banner_section_content {
+    margin-top: -50px;
+}
+
+.vc_custom_1528132304400 {
+ margin-top: 0px !important;
+}
+
+.white-border-btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    font-size: 0.7em;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 2px;
+}
+
+.pad {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.single-post .l-canvas.sidebar_none .l-section {
+    padding: 0;
+}
+
+.thumbnail-link__thumb {
+    min-height: 250px;
+    background-position: center center;
+}
+
+/* Main, Content, Sidebar
+   ====================== */    
+.l-canvas.sidebar_left .l-main,
+.l-canvas.sidebar_right .l-main {
+    padding: 0px;
+}
+
+.l-sidebar {
+    padding: 4em 0;
+}
+
+.l-section .for_related {
+    padding-left: 25px;
+    padding-right: 25px;
 }
