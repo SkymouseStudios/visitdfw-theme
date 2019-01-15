@@ -207,7 +207,8 @@ if (empty($thumb)) {
 ?>
 
 <?php if ( ! $use_special_quote_markup ): ?>
-<?php/*
+<?php 
+/*
 $is_ns_featured_post = get_post_meta( get_the_ID(),'_is_ns_featured_post',true);
 if(!isset($is_ns_featured_post) || $is_ns_featured_post == ""){*/
 
@@ -243,10 +244,10 @@ if(!isset($is_ns_featured_post) || $is_ns_featured_post == ""){*/
 					<?php echo $the_content ?>
 				</div>
 				<div class="learn_more"><a href="<?php echo $link; ?>">Learn More</a></div>
-			<?php endif/*( ! empty( $the_content ) )*/; ?>
+			<?php endif /*( ! empty( $the_content ) )*/; ?>
 			<?php if ( $show_read_more ): ?>
 				<a class="w-blog-post-more w-btn" href="<?php echo $link; ?>"<?php echo $anchor_atts ?>><span class="w-btn-label"><?php _e( 'Read More', 'us' ) ?></span></a>
-			<?php endif/*( $show_read_more )*/; ?>
+			<?php endif /*( $show_read_more )*/; ?>
 		</div>
 	</div>
 </article>
