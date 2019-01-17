@@ -102,53 +102,50 @@ if ( is_category() OR is_tax() ) {
                     <?php $editors_pick = new WP_Query( $args ); 
                          
                     if ( $editors_pick->have_posts() ) { ?>
-                        <h2>Editor's Picks</h2>
-                        <p>Some of the best weekend events and things to do, hand-picked by the team at Visit DFW.</p>
 
                         <div class="w-blog layout_smallsquare cols_1">
-                            <div class="w-blog-list">
+                            <div class="w-blog-list" style="border: none;">
                     <?php while ( $editors_pick->have_posts() ) : $editors_pick->the_post(); ?>
 
 
-                    <article class="w-blog-post dfw-weekends" style="background-color: #f6f6dd; margin-bottom: 20px; border-left: solid 7px yellow">
-                        <div class="w-blog-post-h">
-                            <a href="<?php echo get_permalink(); ?>">
-                                <div class="w-blog-post-preview">
-                                    <div class="thumbnail-link__thumb" style="background-size: cover; background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'thumbnail'); ?>');"></div>
-                                </div>
-                            </a>
-                            
-                            <div class="w-blog-post-body">
-                                <h2 class="w-blog-post-title">
-                                <a class="entry-title" rel="bookmark" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                                </h2>
-                                
-                                <div class="w-blog-post-content">
-                                    <?php 
-                                    // Retreiving post format
-                                    $the_content = apply_filters( 'the_excerpt', get_the_excerpt() );
-                                    echo $the_content;
+                            <article class="w-blog-post dfw-weekends">
+                                <div class="w-blog-post-h">
+                                    <a href="<?php echo get_permalink(); ?>">
+                                        <div class="w-blog-post-preview">
+                                            <div class="thumbnail-link__thumb" style="background-size: cover; background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'thumbnail'); ?>');"></div>
+                                        </div>
+                                    </a>
+                                    
+                                    <div class="w-blog-post-body">
+                                        <h2 class="w-blog-post-title">
+                                        <a class="entry-title" rel="bookmark" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+                                        </h2>
+                                        
+                                        <div class="w-blog-post-content">
+                                            <?php 
+                                            // Retreiving post format
+                                            $the_content = apply_filters( 'the_excerpt', get_the_excerpt() );
+                                            echo $the_content;
 
-                                    ?>
-                                 </div>
-                                
-                                <div class="learn_more"><a href="<?php echo get_permalink(); ?>">Learn More</a></div>
-                            </div>
-                        </div>
-                    </article>
+                                            ?>
+                                         </div>
+                                        
+                                        <div class="learn_more"><a href="<?php echo get_permalink(); ?>">Learn More</a></div>
+                                    </div>
+                                </div>
+                            </article>
                             
                     <?php 
                         endwhile;  
-                        wp_reset_postdata(); 
-                        }
+                        wp_reset_postdata(); ?>
 
-                    ?>
-                    </div>
-                    </div>
+                        </div>
+                        </div>
+
+                     <?php  } ?>
+                    
 
                 <!-- End Editors pick -->
-
-                    <h2>Other Events</h2>
 
                     <?php do_action( 'us_before_archive' ) ?>
 

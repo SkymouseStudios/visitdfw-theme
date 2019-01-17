@@ -1,7 +1,7 @@
 /*
 Theme Name: Visit DFW - Impreza Child
 Template: Impreza
-Version: 2.4.1
+Version: 2.4.2
 Author:	Skymouse Studios
 Theme URI: http://impreza.us-themes.com/
 Author URI: https://skymousestudios.com/
@@ -4072,3 +4072,74 @@ main ul {
     padding-left: 25px;
     padding-right: 25px;
 }
+
+
+/* Modules
+   ====================== */  
+
+/* These are styles for the DFW Travel Insider Stories */
+
+.g-cols.offset_small {
+    margin: 0px;
+}
+
+/* reset the padding on g-cols */
+.g-cols.offset_small > div {
+    padding: 0px;
+}
+
+.g-cols.offset_none > div {
+    padding: 0 20px !important;
+}
+
+/* Add a padding to images in some articles */
+@media screen and (min-width: 600px) {
+   .single-post .g-cols.offset_small > div img {
+    padding-right: 40px;
+}
+}
+
+/* add padding to only the first level of g-cols */
+.l-section-h > .g-cols.offset_small > div {
+    padding: 0 40px;
+}
+
+/* Temp styles for a protected post */
+.for_protectedpost {
+    margin: 20px auto;
+    width: 500px;
+}
+
+/* DFW Travel Insider Stories */
+
+.insider-blog-post {
+    background-color: #40cfa9;
+    text-align: center;
+    color: white;
+}
+
+.insider-blog-post h4 {
+        letter-spacing: 0.1em;
+        padding: 0;
+    margin: 0;
+        color: white;
+        font-weight: 600;
+}
+
+.insider-blog-post p {
+        letter-spacing: 0.5px;
+        margin: 0;
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+.insider-blog-post p:last-child {
+    padding-bottom: 20px;
+} /* END - DFW Travel Insider Stories */
+
+
+/* DFWweekend Page Styles */
+.l-canvas > div:last-child .w-blog-list {
+    border-top: none;
+}
+
