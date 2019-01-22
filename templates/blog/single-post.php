@@ -148,42 +148,7 @@ $meta_html = apply_filters( 'us_single_post_meta_html', $meta_html, get_the_ID()
 	$post_categories = get_the_category();
 	$city = get_post_meta(get_the_ID(),'city',true);
 ?>
-<?php/* if($preview_type == "modern"){ ?>
-<div class="l-titlebar size_medium color_alternate single_custom_title <?php echo $preview_type; ?> <?php echo $post_categories[0]->slug; ?> ">
-	<div class="l-titlebar-h">
-		<div class="l-titlebar-content">
-			<h1 class="w-blog-post-title entry-title" itemprop="headline">
-				<?php the_title() ?>
-				<div class="map_icon">
-					<?php
-						$cities = get_post_meta(get_the_ID(),'city',true);
-						$cities_array = explode(", ",$cities);
-						//pr($cities_array);
-						foreach($cities_array as $key => $value){
-							$genre_url = add_query_arg('city_name',$value, get_permalink( get_page_by_path( 'city' ) ));
-						?>
-							<a href="<?php echo $genre_url; ?>">
-								<div class="city_name">
-									<?php echo $value; ?>
-								</div>
-							</a>
-						<?php
-						}
-					?>
-				</div>
-			</h1>
-		</div>
-	</div>
-</div>
-<?php } */?>
-<?php
-	/*$preview_type_class = "";
-	if($preview_type == "modern"){
-		$preview_type_class = "basic custom_modern";
-	}else{
-		$preview_type_class = $preview_type;
-	}*/
-?>
+
 <?php
 if($preview_type == "basic"){
 ?>

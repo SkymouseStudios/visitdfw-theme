@@ -1,7 +1,7 @@
 /*
 Theme Name: Visit DFW - Impreza Child
 Template: Impreza
-Version: 2.4.2
+Version: 2.4.4
 Author:	Skymouse Studios
 Theme URI: http://impreza.us-themes.com/
 Author URI: https://skymousestudios.com/
@@ -13,6 +13,8 @@ Author URI: https://skymousestudios.com/
         max-height: 540px;
     }
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'brandon-grotesque', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -2894,7 +2896,7 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
     }
     .single-post .w-blog-post-meta .for_sharing.right_social {
         display: block;
-        margin: 10px !important;
+        margin: 10px;
         width: 100%;
     }
     
@@ -3162,9 +3164,7 @@ header .l-subheader.at_bottom .w-search .w-search-form .w-search-form-field inpu
         font-size: 24px;
         line-height: 28px;
     }
-    .desktop_view {
-        display: none
-    }
+    
     .mobile_view {
         display: block;
     }
@@ -4034,6 +4034,8 @@ main ul {
 }
 
 .white-border-btn {
+    margin-top: 15px;
+    display: inline-block;
     text-transform: uppercase;
     font-weight: 600;
     color: white;
@@ -4041,6 +4043,11 @@ main ul {
     border: 1px solid white;
     padding: 5px 15px;
     border-radius: 2px;
+}
+
+.white-border-btn:hover {
+    background-color: #fdfdfd;
+    color: black;
 }
 
 .pad {
@@ -4119,16 +4126,18 @@ main ul {
 }
 
 .insider-blog-post h4 {
-        letter-spacing: 0.1em;
-        padding: 0;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 0;
     margin: 0;
-        color: white;
-        font-weight: 600;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .insider-blog-post p {
-        letter-spacing: 0.5px;
-        margin: 0;
+    letter-spacing: 0.8px;
+    margin: 0;
     padding: 0 15px;
     font-size: 12px;
 }
