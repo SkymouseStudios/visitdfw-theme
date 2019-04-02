@@ -4152,3 +4152,7 @@ main ul {
     border-top: none;
 }
 
+/*Get rid of the share icons on the blog post pages*/
+.single-post .desktop_view .w-blog-post-meta .for_sharing.right_social {
+    display: none;
+}
