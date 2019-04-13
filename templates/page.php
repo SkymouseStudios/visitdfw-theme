@@ -60,39 +60,6 @@ us_load_template( 'templates/titlebar' );
 
 			<?php do_action( 'us_after_page' ) ?>
 
-			<!-- City Agregate -->
-
-			<section class="city-section">
-				<h2 class="city-section-heading"><?php the_field('city_section_heading'); ?></h2>
-				<p class="city-section-subhead"><?php the_field('city_section_subhead'); ?></p>
-
-				<?php
-				if( have_rows('city_repeater') ): ?>
-
-				<div class="city-grid">
-				
-				<?php while( have_rows('city_repeater') ): the_row(); 
-					$city_name = get_sub_field('city_name');
-					$city_tagline = get_sub_field('city_tagline');
-					$city_cta_text = get_sub_field('city_cta_text');
-					$city_image = get_sub_field('city_image');
-					$city_color = get_sub_field('city_color');
-					
-				 	?>
-
-				 	<div class="city-section-card" style="background-image: url(<?php echo $city_image['url'] ?>)">
-						<h3><?php echo $city_name; ?></h3>
-						<h4><?php echo $city_tagline; ?></h4>
-						<a style="background-color: <?php echo $city_color; ?>" href="/city/?city_name=<?php echo $city_name; ?>"><?php echo $city_cta_text;?></a>
-					</div>
-
-				<?php 
-					endwhile; ?>
-					</div>
-					<?php endif; 
-				?>
-
-			</section>
 		</main>
 
 		<?php if ( $us_layout->sidebar_pos == 'left' OR $us_layout->sidebar_pos == 'right' ): ?>
