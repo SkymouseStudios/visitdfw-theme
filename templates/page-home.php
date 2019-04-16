@@ -62,7 +62,7 @@ us_load_template( 'templates/titlebar' );
 
 			<!-- City Agregate -->
 
-			<section class="city-section">
+			<section class="l-section-h city-section">
 				<h2 class="city-section-heading"><?php the_field('city_section_heading'); ?></h2>
 				<p class="city-section-subhead"><?php the_field('city_section_subhead'); ?></p>
 
