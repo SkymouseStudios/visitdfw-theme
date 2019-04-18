@@ -1,7 +1,7 @@
 /*
 Theme Name: Visit DFW - Impreza Child
 Template: Impreza
-Version: 2.4.7
+Version: 2.4.9
 Author:	Skymouse Studios
 Theme URI: http://impreza.us-themes.com/
 Author URI: https://skymousestudios.com/
@@ -14,8 +14,6 @@ Author URI: https://skymousestudios.com/
     }
 
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'brandon-grotesque', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -4172,7 +4170,6 @@ main ul {
     }
 }
 
-
 .city-section-heading {
     text-align: center;
     margin-top: 20px;
@@ -4185,7 +4182,7 @@ main ul {
 }
 
 .city-section-card {
-    padding-top: 100px;
+    padding-top: 170px;
     border: 3px solid #808080;
     border-radius: 5px;
     background-color: #cfcfcf;
@@ -4196,30 +4193,27 @@ main ul {
 
 .city-section-card::after {
     content: '';
-    background-color: #1787bd;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 0px;
+    top: 150px;
     bottom: 0px;
     right: 0px;
     left: 0px;
-    filter: opacity(0.5);
     z-index: -1;
 }
 
 .city-section-card h3, 
-.city-section-card h4 {
+.city-section-card p {
     margin: 0 20px;
     color: white;
+    text-transform: uppercase;
 }
 
-.city-section-card h3 {
-    font-weight: 800;
-}
-
-.city-section-card h4 {
-    font-family: sans-serif;
+.city-section-card p {
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 16px;
     margin-bottom: 20px;
-    font-size: 1.2em;
 }
 
 .city-section-card a {
